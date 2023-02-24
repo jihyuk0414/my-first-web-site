@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> 회원가입 홈페이지 </title>
+    
+</head>
+<body>
+    <p> 이름을 입력하세요  </p>
+    <input id="name" type="text" name="name" size="40" tabindex="2" autofocus />
+
+    <p> 생년월일을 입력하세요 </p>
+    <input id="age" type="date" name="dob" size="40" tabindex="1"></p>
+    
+    <p> 아이디를 입력하세요</p>
+    <input id="id" type = "text", name="id" size="40" tabindex="2" autofocus /> 
+    
+    <p> 비밀번호를 입력하세요 (2~8자로 영어,숫자가 포함되어야 합니다) </p>
+    <input id="password" type = "password" name="password" size="40" tabindex="2" maxlegnth ="8" oninput="maxLengthCheck(this)" autofocus /> 
+    
+    <p> 비밀번호 확인 </p>
+    <input id="passwordcheck" type="password" name="passwordcheck" size="40" tabindex="2" maxlegnth ="8" autofocus /> 
+    <input id="passwordchecking" type="button" name="passwordchecking" value= "비밀번호 확인" /> 
+    
+    <p> 휴대폰 인증 </p>
+    <select id ="telno" name="Tel" class="Teldiv">
+        <option>010</option> </select> - &nbsp;
+    <input id="pho1" class="Value1height" type="text" name="phoneNo1" size="5" maxlength="4" /> -  <input id="pho2" class="Value1height" type="text" name="phoneNo2" size="5" maxlength="4" />
+    <input id="phonecheck" type = "button" name="phonecheck" value = "핸드폰 인증"/>
+
+    <p> 이메일 인증 </p>
+    <input id="email" type = "text", name="email" size="40" tabindex="2" autofocus />
+    <input id = "emailcheck" type = "button" name="emailcheck" value=" 이메일 인증">  
+    <p> 인증번호</p>
+    <input id="codecheck" type = "password" name="codecheck" size="40" tabindex="2" maxlength="4" autofocus /> 
+    <input id="emailok" type = "button" value = "인증번호를 입력하세요" autofocus />
+
+    <p>
+
+     <input id = "end" type = "button" disabled="true" name= "end" value="회원가입 완료"/>
+
+    </p>
+
+    <Script src = "jihyukjoin.js"> </Script>
+</body>
+
+</html>
